@@ -1,0 +1,533 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diet Planner</title>
+    <!-- font awesome cdn link  -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+   <!-- swiper cdn link -->
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
+    <!-- custom css link -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+   
+
+    <!-- header section starts -->
+
+    <header class="header">
+
+        <a href="#" class="logo"> Diet planner</a>
+        
+
+        <nav class="navbar">
+            <a href="#home">home</a>
+            <a href="#about">about</a>
+            <a href="#services">services</a>
+            <a href="#diet">diet</a>
+            <a href="recipies.html">recipes</a>
+            <a href="#review">review</a>
+            <a href="disease.html">disease</a>
+            <a href="registration.html">login</a>
+        </nav>
+
+        <div class="fas fa-bars" id="menu"></div>
+
+    </header>
+
+    
+
+    <section class="home" id="home">
+
+        <div class="content">
+            <h3>welcome to the place full of healthy food</h3>
+            <a href="https://en.wikipedia.org/wiki/Micronutrient " class="btn"> read more</a>
+        </div>
+
+    </section>
+
+   
+    <section class="about" id="about">
+
+        <h1 class="heading">about us</h1>
+
+        <div class="row">
+
+            <div class="content">
+                <h3>my mission is to give you a guideline for your health.</h3>
+                <p>Healthy food is essential for maintaining overall well-being and supporting the body’s natural functions.
+                     It includes a balanced variety of nutrient-dense foods, such as fresh fruits and vegetables, whole grains, lean proteins, and healthy fats. These foods provide vital vitamins, minerals, and antioxidants that help boost the immune system, improve energy levels, and promote healthy growth and development. Incorporating foods like leafy greens, berries, nuts, seeds, and fish rich in omega-3 fatty acids can reduce the risk of chronic diseases, such as heart disease, diabetes, and obesity. Additionally, consuming whole,
+                     unprocessed foods while minimizing refined sugars, unhealthy fats, and excessive salt supports a healthy weight and improves digestion.</p>
+                <a href="#" class="btn"> read more</a>
+            </div>
+
+            <div class="image">
+                <img src="about.png" alt="">
+            </div>
+
+        </div>
+
+    </section>
+
+    
+    <section class="services" id="services">
+
+        <h1 class="heading">our services</h1>
+
+        <div class="box-container">
+
+            <div class="box">
+
+                <div class="icon">
+                    <img src="service-1.png" alt="">
+                </div>
+                <div class="content">
+                    <h3>arranging a nutrition plan</h3>
+                    <div class="line"></div>
+                    <p>Basic list of diet plan</p>
+                    <ul> 
+                        <li><i class="fas fa-check"></i>    Prioritize Whole, Unprocessed Foods</li>
+                        <li><i class="fas fa-check"></i>    Eat a Variety of Fruits and Vegetables</li>
+                        <li><i class="fas fa-check"></i>    Choose Lean Protein Sources</li>
+                        <li><i class="fas fa-check"></i>    Be Mindful of Eating Habits</li>
+                    </ul>
+                </div>
+
+            </div>
+
+            <div class="box">
+
+                <div class="icon">
+                    <img src="service-2.png" alt="">
+                </div>
+                <div class="content">
+                    <h3> Benefits of Exercise
+                    </h3>
+                    <div class="line"></div>
+                    <p></p>
+                    <ul>
+                        <li><i class="fas fa-check"></i>Boosts energy and mood.
+                        </li>
+                        <li><i class="fas fa-check"></i>Improves physical and mental health</li>
+                        <li><i class="fas fa-check"></i>Helps with weight management.</li>
+                        <li><i class="fas fa-check"></i>Strengthens muscles and bones.
+                            </li>
+                    </ul>
+                </div>
+
+            </div>
+
+            <div class="box">
+
+                <div class="icon">
+                    <img src="service-3.png" alt="">
+                </div>
+                <div class="content">
+                    <h3>arranging a nutrition plan</h3>
+                    <div class="line"></div>
+                    <p>for weight gain/loss</p>
+                    <ul>
+                        <li><i class="fas fa-check"></i>Caloric Deficit</li>
+                        <li><i class="fas fa-check"></i>Macronutrient Balance</li>
+                        <li><i class="fas fa-check"></i>Exercise</li>
+                        <li><i class="fas fa-check"></i>Sleep and Stress</li>
+                    </ul>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+   
+
+    <section class="diet" id="diet">
+
+        <h1 class="heading">diet plan</h1>
+
+        <ul class="controls">
+            <li class="buttons active" data-filter="all">
+                <img src="diet-1.png" alt="">
+                <h3>all</h3>
+            </li>
+            <li class="buttons" data-filter="breakfast">
+                <img src="diet-2.png" alt="">
+                <h3>breakfast</h3>
+            </li>
+            <li class="buttons" data-filter="lunch">
+                <img src="diet-3.png" alt="">
+                <h3>lunch</h3>
+            </li>
+            <li class="buttons" data-filter="dinner">
+                <img src="diet-4.png" alt="">
+                <h3>dinner</h3>
+            </li>
+        </ul>
+
+        <div class="image-container">
+
+            <div class="box lunch">
+                <div class="image">
+                    <img src="diet_blog1.jpg" alt="">
+                </div>
+                <div class="content">
+                    <a href="#" class="link">Vegetable Stir-Fry</a>
+                    <p>Avocado is loaded with healthy fats, and whole grain toast adds some fiber to your meal.</p>
+                    <div class="icon">
+                        <a href="#"><i class="fas fa-clock"></i>2/01/2025 </a>
+                        <a href="#"><i class="fas fa-user"></i> by logic titans</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="box breakfast">
+                <div class="image">
+                    <img src="diet_blog2.jpg" alt="">
+                </div>
+                <div class="content">
+                    <a href="#" class="link">Yogurt</a>
+                    <p>High in protein and probiotics, Greek yogurt is great for your gut health. Top it with fresh fruits and a sprinkle of granola.</p>
+                    <div class="icon">
+                        <a href="#"><i class="fas fa-clock"></i>2/01/2025</a>
+                        <a href="#"><i class="fas fa-user"></i>by logic titans </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="box breakfast">
+                <div class="image">
+                    <img src="diet_blog3.jpg" alt="">
+                </div>
+                <div class="content">
+                    <a href="#" class="link">Fruits and Nuts</a>
+                    <p>Simple and easy, a combination of your favorite fruits and a handful of nuts provides a quick and balanced meal.</p>
+                    <div class="icon">
+                        <a href="#"><i class="fas fa-clock"></i> 02/01/2025</a>
+                        <a href="#"><i class="fas fa-user"></i> by logic titans</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="box breakfast">
+                <div class="image">
+                    <img src="diet_blog4.jpg" alt="">
+                </div>
+                <div class="content">
+                    <a href="#" class="link">Lentil and Vegetable Stew</a>
+                    <p>A hearty stew made with lentils and an assortment of vegetables like carrots, tomatoes, spinach, and onions. This dish is rich in fiber and protein.</p>
+                    <div class="icon">
+                        <a href="#"><i class="fas fa-clock"></i> 02/01/2025</a>
+                        <a href="#"><i class="fas fa-user"></i> by logic titans</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="box lunch">
+                <div class="image">
+                    <img src="diet_blog5.jpg" alt="">
+                </div>
+                <div class="content">
+                    <a href="#" class="link">Grilled Chicken Salad</a>
+                    <p> Mix grilled chicken breast with a variety of fresh vegetables like spinach, tomatoes, cucumbers, and bell peppers. Add a light vinaigrette dressing for flavor.</p>
+                    <div class="icon">
+                        <a href="#"><i class="fas fa-clock"></i> 02/01/2025</a>
+                        <a href="#"><i class="fas fa-user"></i> by logical titans</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="box dinner">
+                <div class="image">
+                    <img src="diet_blog6.jpg" alt="">
+                </div>
+                <div class="content">
+                    <a href="#" class="link">Grilled Salmon with Vegetables</a>
+                    <p>Salmon is rich in omega-3 fatty acids and protein. Pair it with a variety of roasted or steamed vegetables like asparagus, broccoli, or Brussels sprouts.
+                    </p>
+                    <div class="icon">
+                        <a href="#"><i class="fas fa-clock"></i> 02/01/2025</a>
+                        <a href="#"><i class="fas fa-user"></i> by logic titans</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="box dinner">
+                <div class="image">
+                    <img src="diet_blog7.jpg" alt="">
+                </div>
+                <div class="content">
+                    <a href="#" class="link">Chicken and Quinoa Bowl:</a>
+                    <p>Grill or bake chicken breast and serve it over a bed of quinoa. Add in some roasted vegetables like bell peppers, zucchini, and spinach.
+
+                    </p>
+                    <div class="icon">
+                        <a href="#"><i class="fas fa-clock"></i> 02/01/2025</a>
+                        <a href="#"><i class="fas fa-user"></i> by logic titans</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="box dinner">
+                <div class="image">
+                    <img src="diet_blog8.jpg" alt="">
+                </div>
+                <div class="content">
+                    <a href="#" class="link">Vegetable Stir-Fry: </a>
+                    <p>Sauté a mix of colorful vegetables such as bell peppers, snow peas, broccoli, and carrots in a little olive oil. Add tofu or lean protein like chicken or shrimp. Serve over brown rice or whole grain noodles.
+                    </p>
+                    <div class="icon">
+                        <a href="#"><i class="fas fa-clock"></i>02/01/2025</a>
+                        <a href="#"><i class="fas fa-user"></i> by logic titans</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="box dinner">
+                <div class="image">
+                    <img src="diet_blog9.jpg" alt="">
+                </div>
+                <div class="content">
+                    <a href="#" class="link">Lentil and Vegetable Stew</a>
+                    <p>A hearty stew made with lentils and an assortment of vegetables like carrots, tomatoes, spinach, and onions. This dish is rich in fiber and protein.</p>
+                    <div class="icon">
+                        <a href="#"><i class="fas fa-clock"></i> 02/01/2025</a>
+                        <a href="#"><i class="fas fa-user"></i> by logic titans</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+
+    
+
+    <section class="pricing" id="pricing">
+
+        <h1 class="heading">pricing plan</h1>
+
+        <div class="box-container">
+
+            <div class="box">
+                <h3 class="title">basic</h3>
+                <div class="price">
+                    <span class="currency">Rs</span>
+                    <span class="amount">200</span>
+                    <span class="duration"> /year</span>
+                </div>
+                <ul>
+                    <li> <i class="fas fa-check"></i> nutrition plan</li>
+                    <li> <i class="fas fa-check"></i> training plan</li>
+                    <li> <i class="fas fa-check"></i> body measurement</li>
+                </ul>
+                <p>30 days consultation</p>
+                <p>3 personal meetings</p>
+                <p>20 access to additional materials</p>
+                <a href="#" class="btn"> read more</a>
+            </div>
+
+            <div class="box active">
+                <h3 class="title">standard</h3>
+                <div class="price">
+                    <span class="currency">Rs</span>
+                    <span class="amount">400</span>
+                    <span class="duration"> /year</span>
+                </div>
+                <ul>
+                    <li> <i class="fas fa-check"></i> nutrition plan</li>
+                    <li> <i class="fas fa-check"></i> training plan</li>
+                    <li> <i class="fas fa-check"></i> body measurement</li>
+                </ul>
+                <p>60 days consultation</p>
+                <p>10 personal meetings</p>
+                <p>free access to additional materials</p>
+                <a href="#" class="btn"> read more</a>
+            </div>
+
+            <div class="box">
+                <h3 class="title">premium</h3>
+                <div class="price">
+                    <span class="currency">Rs</span>
+                    <span class="amount">800</span>
+                    <span class="duration"> /year</span>
+                </div>
+                <ul>
+                    <li> <i class="fas fa-check"></i> nutrition plan</li>
+                    <li> <i class="fas fa-check"></i> training plan</li>
+                    <li> <i class="fas fa-check"></i> body measurement</li>
+                </ul>
+                <p>90 days consultation</p>
+                <p>15 personal meetings</p>
+                <p>free access to additional materials</p>
+                <a href="#" class="btn"> read more</a>
+            </div>
+
+        </div>
+
+    </section>
+
+   
+
+    <section class="reviews" id="review">
+
+        <h1 class="heading">client's reviews</h1>
+
+        <div class="swiper review-slider">
+
+            <div class="swiper-wrapper">
+
+                <div class="swiper-slide slide">
+                    <p> website with easy-to-understand information about healthy eating, diets for different conditions, and tips for meal planning.
+                    </p>
+                    <div class="user">
+                        <img src="pic-1.png" alt="">
+                        <div class="info">
+                            <h3>Rakesh</h3>
+                            <span>client</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="swiper-slide slide">
+                    <p>Offers advice on healthy diets and how food choices can help prevent or manage diseases, backed by research from Harvard experts.
+                    </p>
+                    <div class="user">
+                        <img src="pic-2.png" alt="">
+                        <div class="info">
+                            <h3>satish</h3>
+                            <span>client</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="swiper-slide slide">
+                    <p>A trusted website by dietitians, it shares practical tips on eating right for health issues and creating balanced meals.</p>
+                    <div class="user">
+                        <img src="pic-3.png" alt="">
+                        <div class="info">
+                            <h3>Raj</h3>
+                            <span>client</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="swiper-slide slide">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis, exercitationem. Odio, placeat ut facere perferendis deserunt rerum ex suscipit dolorem nihil provident tempore pariatur soluta, excepturi illum, voluptates eos. Eos?</p>
+                    <div class="user">
+                        <img src="pic-4.png" alt="">
+                        <div class="info">
+                            <h3>john deo</h3>
+                            <span>client</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="swiper-slide slide">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis, exercitationem. Odio, placeat ut facere perferendis deserunt rerum ex suscipit dolorem nihil provident tempore pariatur soluta, excepturi illum, voluptates eos. Eos?</p>
+                    <div class="user">
+                        <img src="pic-5.png" alt="">
+                        <div class="info">
+                            <h3>john deo</h3>
+                            <span>client</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="swiper-slide slide">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis, exercitationem. Odio, placeat ut facere perferendis deserunt rerum ex suscipit dolorem nihil provident tempore pariatur soluta, excepturi illum, voluptates eos. Eos?</p>
+                    <div class="user">
+                        <img src="pic-6.png" alt="">
+                        <div class="info">
+                            <h3>john deo</h3>
+                            <span>client</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+   
+
+    <section class="newsletter">
+
+        <div class="content">
+            <h1 class="heading">subscribe now</h1>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quam et labore nobis ducimus consequuntur qui eos fugit expedita veniam maxime delectus, fugiat necessitatibus, dolorum nesciunt quidem at reprehenderit? Inventore, molestiae?</p>
+            <form action="">
+                <input type="email" placeholder="enter your email" class="email">
+                <input type="submit" value="subscribe" class="btn">
+            </form>
+        </div>
+
+    </section>
+
+    
+    <section class="footer">
+
+        <div class="box-container">
+
+            <div class="box">
+                <h3>quick links</h3>
+                <a href="#home"> <i class="fas fa-arrow-right"></i>home</a>
+                <a href="#about"> <i class="fas fa-arrow-right"></i>about</a>
+                <a href="#services"> <i class="fas fa-arrow-right"></i>services</a>
+                <a href="#diet"> <i class="fas fa-arrow-right"></i>diet</a>
+                <a href="#blog"> <i class="fas fa-arrow-right"></i>blog</a>
+                <a href="#reviews"> <i class="fas fa-arrow-right"></i>reviews</a>
+            </div>
+
+            <div class="box">
+                <h3>extra links</h3>
+                <a href="#"> <i class="fas fa-arrow-right"></i>my account</a>
+                <a href="#"> <i class="fas fa-arrow-right"></i>my order</a>
+                <a href="#"> <i class="fas fa-arrow-right"></i>my wishlist</a>
+                <a href="#"> <i class="fas fa-arrow-right"></i>ask questions</a>
+                <a href="#"> <i class="fas fa-arrow-right"></i>terms of use</a>
+                <a href="#"> <i class="fas fa-arrow-right"></i>privacy policy</a>
+            </div>
+
+            <div class="box">
+                <h3>contact info</h3>
+                <a href="#"> <i class="fas fa-phone"></i>9158456844</a>
+                <a href="#"> <i class="fas fa-phone"></i>7256482596</a>
+                <a href="#"> <i class="fas fa-envelope"></i>logictitans@gmail.com</a>
+                <a href="#"> <i class="fas fa-map"></i>vadodara, 391760</a>
+            </div>
+
+            <div class="box">
+                <h3>follow us</h3>
+                <a href="#"> <i class="fab fa-facebook-f"></i>facebook</a>
+                <a href="#"> <i class="fab fa-twitter"></i>twitter</a>
+                <a href="#"> <i class="fab fa-instagram"></i>instagram</a>
+                <a href="#"> <i class="fab fa-linkedin"></i>linkedin</a>
+                <a href="#"> <i class="fab fa-github"></i>github</a>
+            </div>
+
+        </div>
+
+        <div class="credit">created by <span>Logic titans</span> | all rights are reserved!</div>
+        <div><button><a href=""></a></button></div>
+
+    </section>
+
+
+
+
+
+
+    <!-- jquery cdn link -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- swiper cdn link -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <!-- custom js link -->
+    <script src="script.js"></script>
+
+</body>
+</html>

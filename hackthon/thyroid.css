@@ -1,0 +1,121 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #e9f8e9; /* Light green background */
+    color: #2e4d2e;
+    overflow-x: hidden;
+}
+
+header {
+    background: #b6e3b6; /* Green header background */
+    text-align: center;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+
+header h1 {
+    font-size: 2.5rem;
+    color: #145214;
+}
+
+main {
+    padding: 20px;
+}
+
+.diet-section {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    gap: 20px;
+}
+
+.foods {
+    flex: 1;
+    background: #c9f1c9;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+.foods img {
+    width: 100%;
+    max-height: 150px;
+    object-fit: contain;
+    margin-top: 10px;
+    animation: slideIn 1.5s ease-in-out;
+}
+
+.foods h2 {
+    color: #145214;
+    text-align: center;
+}
+
+ul {
+    list-style-type: square;
+    margin-left: 20px;
+    padding: 0;
+}
+
+ul li {
+    margin: 10px 0;
+    font-size: 1rem;
+}
+
+.tips-section {
+    margin-top: 40px;
+    padding: 20px;
+    background: #d9f7d9;
+    border-radius: 8px;
+    animation: fadeInUp 1.5s ease-in-out;
+}
+
+.tips-section h2 {
+    color: #236723;
+    margin-bottom: 10px;
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background: #b6e3b6;
+    color: #4a7a4a;
+    font-size: 0.9rem;
+    margin-top: 20px;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateX(-30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}

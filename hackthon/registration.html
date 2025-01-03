@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Food Nourishing - Register</title>
+    <link rel="stylesheet" href="register.css">
+</head>
+<body>
+    <div class="register-container">
+        <h1>Register for Food Nourishing</h1>
+        <form action="./connect.php" method="POST" class="register-form" onsubmit="((e)=> { e.preventDefaut() } )">
+            <div class="input-group">
+                <label for="first-name">First Name</label>
+                <input type="text" id="first-name" name="first_name" required>
+            </div>
+
+            <div class="input-group">
+                <label for="last-name">Last Name</label>
+                <input type="text" id="last-name" name="last_name" required>
+            </div>
+
+            <div class="input-group">
+                <label for="email">Email Address</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+
+            <div class="input-group">
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" required>
+            </div>
+
+            <div class="input-group">
+                <label for="confirm-password">Confirm Password</label>
+                <input type="password" id="confirm-password" name="confirm_password" required>
+            </div>
+
+            <div class="input-group">
+                <label for="favorite-food">Favorite Food</label>
+                <input type="text" id="favorite-food" name="favorite_food" required>
+            </div>
+
+            <div class="input-group">
+                <label for="preferences">Dietary Preferences</label>
+                <textarea id="preferences" name="preferences" placeholder="Optional: E.g., Vegetarian, Vegan, etc." rows="3"></textarea>
+            </div>
+
+            <button type="submit" class="submit-btn" onclick=" console.log('click')">Register</button>
+
+            <p class="login-redirect">Already have an account? <a href="login.html">Login here</a></p>
+        </form>
+    </div>
+</body>
+</html>
+

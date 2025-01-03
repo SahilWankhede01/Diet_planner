@@ -1,0 +1,37 @@
+body{
+    background-color: #c9f1c9;
+}
+.diet .controls{
+    
+    
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+    gap: 1.5rem;
+    list-style: none;
+ }
+ 
+ .diet .controls .buttons{
+    background-color: rgb(250, 250, 247);
+    padding: 3rem 2rem;
+    background: var();
+    cursor: pointer;
+    margin-bottom: 3rem;
+    box-shadow: 0 .5rem 1rem rgba(88, 80, 80, 0.1);
+    text-align: center;
+    border-radius: 1rem;
+ }
+ 
+ .diet .controls .buttons img{
+    height: 6rem;
+ }
+ 
+ .diet .controls .buttons h3{
+    font-size: 1.7rem;
+    padding-top: 1rem;
+    color: var(--light-black);
+ }
+ 
+ .diet .controls .buttons.active{
+    background: var(--primary);
+ }
+ 
